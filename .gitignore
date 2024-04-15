@@ -1,0 +1,19 @@
+# .gitignore
+
+# Diretórios
+node_modules/
+dist/
+.vscode/
+
+# Arquivos
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Jest
+coverage/

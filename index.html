@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="./src/index.js"></script>
+    <link rel="stylesheet/less" type="text/css" href="style.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <title>Web Component</title>
+  </head>
+
+  <body>
+    <h1>WEB COMPONENT</h1>
+
+    <section>
+      <div class="component-apresentation">
+        <div class="component-apresentation__header">
+          <p>Primary Button</p>
+        </div>
+
+        <div class="component-apresentation__body">
+          <ion-button
+            label="Primary"
+            type="primary"
+            onclick="console.log('Button clicked!')"
+          ></ion-button>
+          <ion-button
+            label="Primary"
+            type="primary"
+            disabled="true"
+            onclick="console.log('This will not appear!')"
+          ></ion-button>
+          <ion-button
+            label="Primary"
+            type="primary"
+            loading="true"
+            onclick="console.log('This will not appear :D !')"
+          ></ion-button>
+          <ion-button
+            label="Dropdown"
+            type="primary"
+            options='[{"label": "Opção 01", "key": "opcao1", "selected": false, "disabled": false}, {"label": "Opcao 02", "key": "opcao2", "selected": false, "disabled": false}]'
+          ></ion-button>
+        </div>
+      </div>
+
+      <div class="component-apresentation">
+        <div class="component-apresentation__header">
+          <p>Secondary Button</p>
+        </div>
+        <div class="component-apresentation__body">
+          <ion-button
+            label="Secondary"
+            type="secondary"
+            onclick="console.log('Secondary clicked!')"
+          ></ion-button>
+          <ion-button
+            label="Secondary"
+            type="secondary"
+            disabled="true"
+          ></ion-button>
+          <ion-button
+            label="Secondary"
+            type="secondary"
+            loading="true"
+            onclick="console.log('This will not appear :D !')"
+          ></ion-button>
+        </div>
+      </div>
+
+      <div class="component-apresentation">
+        <div class="component-apresentation__header">
+          <p>Ghost Button</p>
+        </div>
+        <div class="component-apresentation__body">
+          <ion-button
+            label="Ghost"
+            type="ghost"
+            onclick="console.log('Ghost clicked!')"
+          ></ion-button>
+          <ion-button label="Ghost" type="ghost" disabled="true"></ion-button>
+          <ion-button label="Ghost" type="ghost" loading="true"></ion-button>
+        </div>
+      </div>
+
+      <div class="component-apresentation">
+        <div class="component-apresentation__header">
+          <p>Dashed Button</p>
+        </div>
+        <div class="component-apresentation__body">
+          <ion-button
+            label="Dashed"
+            type="dashed"
+            onclick="console.log('Dashed clicked!')"
+          ></ion-button>
+          <ion-button label="Dashed" type="dashed" disabled="true"></ion-button>
+          <ion-button label="Dashed" type="dashed" loading="true"></ion-button>
+        </div>
+      </div>
+
+      <div class="component-apresentation">
+        <div class="component-apresentation__header">
+          <p>Dropdown</p>
+        </div>
+        <ion-dropdown
+          options='[{"label": "Opção 01", "key": "opcao1", "selected": false, "disabled": false}, {"label": "Opcao 02", "key": "opcao2", "selected": false, "disabled": false}]'
+        ></ion-dropdown>
+        <div class="component-apresentation__body"></div>
+      </div>
+    </section>
+  </body>
+</html>
